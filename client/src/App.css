@@ -147,6 +147,10 @@ nav {
 	font-size: 1rem;
 }
 
+.welcome-text p {
+	text-align: center;
+}
+
 .buttons {
 	display: flex;
 	align-items: center;
@@ -1116,6 +1120,22 @@ input[type='checkbox'] + small {
 	animation-delay: 0.3s;
 }
 
+.display-social-media {
+	width: 50vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+button[type='hidden'] {
+	display: none;
+}
+
+.fa-thumbs-up,
+.fa-thumbs-down {
+	margin-right: 1rem;
+}
+
 @keyframes loader {
 	from {
 		transform: translateY(0);
@@ -1321,6 +1341,10 @@ input[type='checkbox'] + small {
 	input[type='checkbox'] {
 		width: 3vw;
 		height: 3vw;
+	}
+
+	.welcome-text p {
+		text-align: left;
 	}
 }
 
@@ -1574,20 +1598,4 @@ input[type='checkbox'] + small {
 	.delete-account {
 		width: 40vw;
 	}
-}
-
-.display-social-media {
-	width: 50vw;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-button[type='hidden'] {
-	display: none;
-}
-
-.fa-thumbs-up,
-.fa-thumbs-down {
-	margin-right: 1rem;
 }

@@ -397,6 +397,7 @@ h4 {
 	height: 5vw;
 	cursor: pointer;
 	font-size: 3rem;
+	z-index: 1;
 }
 
 .back i {
@@ -1403,14 +1404,14 @@ button[type='hidden'] {
 	}
 
 	.logo {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		margin-top: 15vh;
 		height: 10vh;
 		flex: 0;
 	}
 
 	.nav-links {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
@@ -1431,7 +1432,7 @@ button[type='hidden'] {
 	}
 
 	h2 {
-		font-size: 2.5rem;
+		font-size: 2.2rem;
 		margin: 3.5rem 0;
 	}
 
@@ -1443,6 +1444,10 @@ button[type='hidden'] {
 	.alert,
 	.current {
 		width: 80vw;
+	}
+
+	textarea {
+		width: 95vw;
 	}
 
 	.alert {
@@ -1466,9 +1471,13 @@ button[type='hidden'] {
 		flex-direction: column;
 	}
 
+	.credential .image-wrapper {
+		width: 50vw;
+	}
+
 	.image-wrapper {
 		width: 50vw;
-		height: 70vw;
+		height: 50vw;
 	}
 
 	.profile-info {
@@ -1522,6 +1531,19 @@ button[type='hidden'] {
 		align-items: center;
 		justify-content: space-around;
 		flex-direction: column;
+		width: 95vw;
+	}
+
+	.single-post-buttons {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+	.discussionButton {
+		grid-column: 2 span;
+	}
+
+	.delete-post-button {
+		grid-column: 2 span;
 	}
 
 	.delete-post-button {
@@ -1540,7 +1562,7 @@ button[type='hidden'] {
 	}
 
 	.leaveComment {
-		width: 50vw;
+		width: 80vw;
 	}
 
 	.singleComment {
@@ -1569,12 +1591,22 @@ button[type='hidden'] {
 	.dashboard-buttons {
 		flex-direction: column;
 		height: 20vh;
+		width: 99vw;
 	}
 
 	.add-education-button,
 	.add-experience-button,
 	.edit-profile-button {
 		width: 80vw;
+		margin: 0;
+	}
+
+	.singleComment {
+		width: 95vw;
+	}
+
+	.delete-account {
+		width: 40vw;
 	}
 }
 

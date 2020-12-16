@@ -88,10 +88,10 @@ const EditProfile = ({
 					<option value='Junior Developer'>Junior Developer</option>
 					<option value='Senior Developer'>Senior Developer</option>
 					<option value='Manager'>Manager</option>
-					<option value='Student'>Uczeń</option>
-					<option value='Teacher'>Nauczyciel</option>
+					<option value='Uczeń'>Uczeń</option>
+					<option value='Nauczyciel'>Nauczyciel</option>
 					<option value='CEO'>CEO</option>
-					<option value='Other'>Inne</option>
+					<option value='Inne'>Inne</option>
 				</select>
 				<small>Powiedz nam na jakim etapie jest twoja kariera</small>
 				<input

@@ -39,44 +39,14 @@ const ProfileTop = ({
 						</a>
 					</button>
 				)}
-				{social && social.twitter && (
-					<button>
-						<a href={social.twitter} target='_blank' rel='noopener noreferrer'>
-							<i className='fab fa-twitter'></i>
-						</a>
-					</button>
-				)}
-				{social && social.linkedin && (
-					<button>
-						<a href={social.linkedin} target='_blank' rel='noopener noreferrer'>
-							<i className='fab fa-linkedin'></i>
-						</a>
-					</button>
-				)}
-				{social && social.youtube && (
-					<button>
-						<a href={social.youtube} target='_blank' rel='noopener noreferrer'>
-							<i className='fab fa-youtube'></i>
-						</a>
-					</button>
-				)}
-				{social && social.facebook && (
-					<button>
-						<a href={social.facebook} target='_blank' rel='noopener noreferrer'>
-							<i className='fab fa-facebook'></i>
-						</a>
-					</button>
-				)}
-				{social && social.instagram && (
-					<button>
-						<a
-							href={social.instagram}
-							target='_blank'
-							rel='noopener noreferrer'>
-							<i className='fab fa-instagram'></i>
-						</a>
-					</button>
-				)}
+				{social &&
+					Object.entries(social).map(([key, value]) => (
+						<button key={key}>
+							<a href={value} target='_blank' rel='noopener noreferrer'>
+								<i className={`fab fa-${key}`}></i>
+							</a>
+						</button>
+					))}
 			</div>
 			<ul className='skills'>
 				{skills.map((skill, index) => (
